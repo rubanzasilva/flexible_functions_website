@@ -45,7 +45,7 @@ export default function Home() {
 
           <h3 className="mt-10">Research Focus</h3>
           <ul className="list-disc pl-5 space-y-2 mb-6">
-            <li>What is needed to make AI's predictive power useful in real-world applications</li>
+            <li>What is needed to make AI&apos;s predictive power useful in real-world applications</li>
             <li>How to tie model results to decisions - decision analysis</li>
             <li>Selecting metrics that align with business decisions</li>
             <li>Making AI operate more efficiently and cost-effectively</li>
@@ -64,8 +64,8 @@ export default function Home() {
             and experience.
           </p>
           <p className="italic">
-            "Imagine being able to predict, with pinpoint accuracy, exactly what every customer was going to buy every day, 
-            in every location and what price they'd be willing to pay."
+            &ldquo;Imagine being able to predict, with pinpoint accuracy, exactly what every customer was going to buy every day, 
+            in every location and what price they&apos;d be willing to pay.&rdquo;
           </p>
         </div>
       </section>
