@@ -1,103 +1,96 @@
-import Image from "next/image";
+import React from 'react';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main>
+      {/* Hero Section */}
+      <section className="centered-container">
+        <h1>
+          FLEXIBLE
+          <br />
+          FUNCTIONS
+        </h1>
+        <p className="text-xl max-w-2xl text-center text-gray-600 mb-8">
+          An industrial research and development AI lab building practical use cases using 
+          current state-of-the-art machine learning systems in different domains.
+        </p>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* About Section */}
+      <section className="section">
+        <div className="content-container">
+          <h2>Our Vision</h2>
+          <p>
+            AI is the new electricity and has the potential to transform multiple industries. We believe we are entering one of the greatest eras of technology.
+          </p>
+          <p>
+            While we hear a lot about potential use cases and how AI is going to automate everything, much of the value in AI is still untapped and undiscovered.
+            To unleash the potential of AI, we are bridging the gap between research and real-world applications by building the application layer for AI.
+          </p>
+          
+          <h3 className="mt-10">Our Approach</h3>
+          <p>
+            Flexible Functions is an industrial research and development AI lab building practical use cases using current state-of-the-art machine learning 
+            systems in different domains. We do this while researching how to build new user products and experiences while integrating the use of cutting-edge 
+            foundation models.
+          </p>
+          <p>
+            We expect the practical aspect of building use cases for AI will inform research on how to take advantage of AI to build new products and experiences 
+            and how to tackle the challenges that currently prevent AI from being more prevalent across various industries.
+          </p>
+          <p>
+            We believe we can only build useful applications by engaging end users and domain experts and seeing what problems we can help them tackle using AI. 
+            This approach will increase the adoption of AI and in turn lead to increased investment in scaling the field.
+          </p>
+
+          <h3 className="mt-10">Research Focus</h3>
+          <ul className="list-disc pl-5 space-y-2 mb-6">
+            <li>What is needed to make AI's predictive power useful in real-world applications</li>
+            <li>How to tie model results to decisions - decision analysis</li>
+            <li>Selecting metrics that align with business decisions</li>
+            <li>Making AI operate more efficiently and cost-effectively</li>
+            <li>Leveraging large multimodal models to improve current use cases, build new products and experiences</li>
+          </ul>
+
+          <h3 className="mt-10">Use Case: Demand Forecasting</h3>
+          <p>
+            Supply chains today are more vulnerable to unforeseen shocks/disruptions be it pandemics, wars, climate change, etc. 
+            Overstocking leads to wasted inventory, tied-up capital, missed opportunities for fulfillment, and dissatisfied customers.
+          </p>
+          <p>
+            We offer a dynamic inventory management system that uses various machine learning algorithms taking advantage of 
+            diverse datasets to forecast demand at all levels with pinpoint accuracy. This enables you to always have the right 
+            products stocked up. The goal is to forecast when and what every customer is going to purchase and optimize price 
+            and experience.
+          </p>
+          <p className="italic">
+            "Imagine being able to predict, with pinpoint accuracy, exactly what every customer was going to buy every day, 
+            in every location and what price they'd be willing to pay."
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Values Section */}
+      <section className="section pb-20">
+        <div className="content-container">
+          <h2>Company Values</h2>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Solve hard problems by solving small problems</li>
+            <li>DIY policy</li>
+            <li>Be explicit in conversation</li>
+            <li>Data-driven decisions - decisions must be backed by actual math</li>
+            <li>100% dedication - must be top priority</li>
+            <li>Open source</li>
+            <li>Learn through practice (by doing)</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-200 py-8 text-center text-gray-500">
+        <p>Science is better when shared.</p>
+        <p className="mt-2">© {new Date().getFullYear()} Flexible Functions</p>
       </footer>
-    </div>
-  );
+    </main>
+  )
 }
