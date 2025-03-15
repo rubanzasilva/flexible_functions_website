@@ -4,6 +4,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Flexible Functions - Industrial Research & Development AI Lab',
   description: 'Building practical AI use cases using state-of-the-art machine learning systems in different domains.',
+  viewport: 'width=device-width, initial-scale=1',
 }
 
 export default function RootLayout({
@@ -13,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="pt-16"> {/* Add padding top to account for fixed navbar */}
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
