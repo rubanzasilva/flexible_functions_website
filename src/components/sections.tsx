@@ -1,4 +1,7 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
+
 
 export const HeroSection = () => (
   <section className="centered-container">
@@ -54,6 +57,62 @@ export const ResearchSection = () => (
     </div>
   </section>
 );
+
+export const TeamSection = () => {
+  const [selectedMember, setSelectedMember] = useState('member1');
+
+  const teamMembers = [
+    { id: 'member1', name: 'Silver Rubanza', title: 'Chief Technology Officer' },
+    { id: 'member2', name: 'Daniel Hosana', title: 'Chief Marketing Officer' },
+    { id: 'member3', name: 'Wilson Ssukwe', title: 'Chief Financial Officer' },
+  ];
+
+  const memberDetails = {
+    'member1': {
+      bio: 'Machine Learning Engineer.'
+    },
+    'member2': {
+      bio: 'Experienced in marketing and business development.'
+    },
+    'member3': {
+      bio: 'Expert in finance, and business operations'
+    }
+  };
+
+  return (
+    <section className="section">
+      <div className="content-container">
+        <h2 className="text-center">Founding Team</h2>
+        
+        <div className="mt-8 text-center">
+          {teamMembers.map((member, index) => (
+            <React.Fragment key={member.id}>
+              <a 
+                href="#" 
+                className={`inline-block mx-1 text-gray-600 hover:text-gray-900 ${selectedMember === member.id ? 'text-gray-900 underline' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setSelectedMember(member.id);
+                }}
+              >
+                {member.name}
+                {member.title ? ` (${member.title})` : ''}
+              </a>
+              {index < teamMembers.length - 1 && <span>, </span>}
+            </React.Fragment>
+          ))}
+        </div>
+        {/*
+        <div className="mt-6 p-6 bg-gray-50 border border-gray-200 rounded-md">
+          <h3 className="mb-2">{teamMembers.find(m => m.id === selectedMember)?.name}</h3>
+          <p className="text-gray-700">{memberDetails[selectedMember]?.bio}</p>
+        </div>
+        */}
+      </div>
+    </section>
+
+  );
+};
 
 export const UseCaseSection = () => (
   <section className="section">

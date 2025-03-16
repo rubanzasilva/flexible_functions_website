@@ -1,3 +1,4 @@
+import { TeamSection } from '@/components/sections';
 import React from 'react';
 
 export default function Home() {
@@ -85,6 +86,8 @@ export default function Home() {
           </ul>
         </div>
       </section>
+
+      <TeamSection/>
 
       {/* Footer */}
       <footer className="border-t border-gray-200 py-6 sm:py-8 text-center text-gray-500 text-sm sm:text-base">

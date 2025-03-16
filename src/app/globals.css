@@ -79,7 +79,7 @@ p {
 
 /* Layout components */
 .section {
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -92,7 +92,7 @@ p {
 
 @media (min-width: 1024px) {
   .section {
-    padding: 5rem 0;
+    padding: 1rem 0;
     max-width: 800px;
   }
 }
@@ -103,7 +103,7 @@ p {
   align-items: center;
   justify-content: center;
   min-height: 90vh;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -150,5 +150,59 @@ p {
 @media (min-width: 768px) {
   .desktop-menu {
     display: flex;
+  }
+}
+
+/* Add these to the end of your globals.css file */
+
+/* Team section styles */
+.team-member-list {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.team-member-list a {
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+  color: #555;
+  text-decoration: none;
+}
+
+.team-member-list a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.team-member-list a.active {
+  color: #000;
+  text-decoration: underline;
+}
+
+.team-member-detail {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-member-detail h3 {
+  margin-top: 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.team-member-detail p {
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .team-member-list {
+    font-size: 1rem;
   }
 }
