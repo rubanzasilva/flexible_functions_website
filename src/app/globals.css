@@ -79,20 +79,20 @@ p {
 
 /* Layout components */
 .section {
-  padding: 1rem 1rem;
+  /*padding: 1rem 1rem;*/
   max-width: 100%;
   margin: 0 auto;
 }
 
 @media (min-width: 640px) {
   .section {
-    padding: 4rem 2rem;
+    padding: 1rem 0.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .section {
-    padding: 1rem 0;
+    /*padding: 1rem 0;*/
     max-width: 800px;
   }
 }
@@ -103,14 +103,14 @@ p {
   align-items: center;
   justify-content: center;
   min-height: 90vh;
-  padding: 0.5rem;
+  padding: 8px;
   text-align: center;
 }
 
 @media (min-width: 640px) {
   .centered-container {
     min-height: 100vh;
-    padding: 2rem;
+    /*padding: 1rem;*/
   }
 }
 

@@ -66,7 +66,7 @@ export const TeamSection = () => {
     { id: 'member2', name: 'Daniel Hosana', title: 'Chief Marketing Officer' },
     { id: 'member3', name: 'Wilson Ssukwe', title: 'Chief Financial Officer' },
   ];
-
+{/*
   const memberDetails = {
     'member1': {
       bio: 'Machine Learning Engineer.'
@@ -78,7 +78,7 @@ export const TeamSection = () => {
       bio: 'Expert in finance, and business operations'
     }
   };
-
+*/}
   return (
     <section className="section">
       <div className="content-container">
